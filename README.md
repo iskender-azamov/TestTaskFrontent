@@ -1,39 +1,27 @@
-# TestTaskFrontent
+# 🧪 Тестовое задание — Список задач на Vue 3
 
-This template should help get you started developing with Vue 3 in Vite.
+## 📌 Цель
 
-## Recommended IDE Setup
+Создать SPA-приложение на Vue 3, которое:
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Загружает список задач из `tasks.json` (один раз при первом запуске)
+- Позволяет отмечать задачи как выполненные (чекбоксы)
+- Сохраняет состояние при перезагрузке страницы (через localStorage)
 
-## Type Support for `.vue` Imports in TS
+## 🧩 Стек
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- Vue 3 + Composition API
+- Vite
+- TypeScript
+- Без внешних UI-фреймворков
 
-## Customize configuration
+## 🗃 Пример файла `tasks.json`
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+```json
+[
+  { "id": 1, "title": "Задача 1", "done": false },
+  { "id": 2, "title": "Задача 2", "done": false },
+  { "id": 3, "title": "Задача 3", "done": false },
+  { "id": 4, "title": "Задача 4", "done": false },
+  { "id": 5, "title": "Задача 5", "done": false }
+]
